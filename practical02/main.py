@@ -12,7 +12,7 @@ df=pd.read_csv(Path(__file__).resolve().parents[1] / 'data' / 'hour.csv')
 y=df['cnt']
 X=df.drop(columns=['cnt','casual','registered','instant','dteday'])
 Xtr,Xte,ytr,yte=train_test_split(X,y,test_size=.2,random_state=42)
-cv=KFold(5,shuffle=True,random_state_state=42)
+cv=KFold(5,shuffle=True,random_state=42)
 models={
  'baseline':DummyRegressor(strategy='mean'),
  'ridge':Ridge(alpha=10.0),
