@@ -1,0 +1,48 @@
+{
+  "policy_id": "titanic-evacuation-priority",
+  "version": "1.0.0",
+  "score_semantics": "P(AtRisk = 1 | x) from LogisticRegression (lab02 pipeline), not recalibrated",
+  "decision_rule": "score >= threshold",
+  "thresholds": {
+    "low": 0.71,
+    "high": 0.71
+  },
+  "actions": [
+    "standard",
+    "manual_review",
+    "priority_assistance"
+  ],
+  "alternative_three_zone": {
+    "low": 0.646,
+    "high": 0.838,
+    "shares": {
+      "priority": 0.4,
+      "review": 0.15,
+      "standard": 0.45
+    }
+  },
+  "hard_quota_fallback": "top_k_decisions(k = floor(0.50 * batch_size)), ties by PassengerId ascending",
+  "cost_scenario": {
+    "name": "Реалістичний",
+    "c_fp": 1.0,
+    "c_fn": 5.0,
+    "units": "scenario units (1 = one unnecessary escort)",
+    "source": "scenario assumption, not measured"
+  },
+  "capacity": {
+    "max_alert_rate": 0.5,
+    "type": "soft target"
+  },
+  "selected_on": "OOF predictions on D_train (712 passengers), StratifiedKFold(5, shuffle, random_state=42)",
+  "data": "data/titanic.csv (Kaggle train.csv), split 80/20 stratified, random_state=42",
+  "model_version": "lab02 LogisticRegression(max_iter=1000) + preprocessing from src/titanic_workflow.py",
+  "random_state": 42,
+  "created": "2026-10-03",
+  "owner": "Maksym Lapko",
+  "review_conditions": [
+    "alert rate outside 0.40–0.60 on a new batch",
+    "Brier score on labelled data > 0.16",
+    "change of crew capacity or cost assumptions",
+    "model retraining"
+  ]
+}
