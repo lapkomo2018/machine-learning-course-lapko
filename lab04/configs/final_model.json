@@ -1,0 +1,45 @@
+{
+  "model": "Контрольоване дерево",
+  "params": {
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 3,
+    "max_features": null,
+    "max_leaf_nodes": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "random_state": 42,
+    "splitter": "best"
+  },
+  "preprocessing": "median imputation + missing indicator (numeric), most_frequent + one-hot (categorical), no scaling",
+  "features": [
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "Pclass",
+    "Sex",
+    "Embarked"
+  ],
+  "target": "AtRisk = 1 - Survived",
+  "metric": "f1_macro",
+  "split": {
+    "test_size": 0.2,
+    "stratify": true,
+    "random_state": 42
+  },
+  "outer_cv": "RepeatedStratifiedKFold(5x4, random_state=42)",
+  "selection_rule": "ensemble only if CV macro F1 gain > tree SD and OOF instability lower; otherwise controlled tree",
+  "evidence": {
+    "cv_macro_f1": 0.7893,
+    "oof_instability": 0.0223
+  },
+  "controlled_tree_reference": {
+    "max_depth": 3,
+    "min_samples_leaf": 2
+  }
+}
