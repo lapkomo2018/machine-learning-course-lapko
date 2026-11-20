@@ -1,0 +1,64 @@
+{
+  "scenario": "interactive",
+  "version": "1.0",
+  "config": {
+    "name": "interactive",
+    "version": "1.0",
+    "description": "Інтерактивний архів Titanic",
+    "constraints": {
+      "size_bytes": {
+        "max": 60000
+      },
+      "recall": {
+        "min": 0.77
+      },
+      "p95_ms": {
+        "max": 100
+      }
+    },
+    "criteria": {
+      "f1": {
+        "weight": 0.2,
+        "direction": "maximize",
+        "worst": 0.7,
+        "best": 0.92
+      },
+      "recall": {
+        "weight": 0.15,
+        "direction": "maximize",
+        "worst": 0.7,
+        "best": 0.95
+      },
+      "p95_ms": {
+        "weight": 0.35,
+        "direction": "minimize",
+        "worst": 15,
+        "best": 1
+      },
+      "size_bytes": {
+        "weight": 0.3,
+        "direction": "minimize",
+        "worst": 400000,
+        "best": 3000
+      }
+    }
+  },
+  "winner": "logistic",
+  "backup": "tree",
+  "score": 0.709625706368691,
+  "expected_f1": [
+    0.8327808811456393,
+    0.8605762591942877
+  ],
+  "rejected": [
+    {
+      "model": "forest",
+      "violations": "size_bytes=1.169e+05 (max 60000)"
+    }
+  ],
+  "risks": [
+    "hardware-dependent latency",
+    "historical population"
+  ],
+  "reselect": "new hardware, schema or recall below floor"
+}

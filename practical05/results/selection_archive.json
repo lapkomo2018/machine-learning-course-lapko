@@ -1,0 +1,59 @@
+{
+  "scenario": "archive",
+  "version": "1.0",
+  "config": {
+    "name": "archive",
+    "version": "1.0",
+    "description": "Пакетна історична реконструкція",
+    "constraints": {
+      "size_bytes": {
+        "max": 1000000
+      },
+      "recall": {
+        "min": 0.78
+      },
+      "p95_ms": {
+        "max": 100
+      }
+    },
+    "criteria": {
+      "f1": {
+        "weight": 0.45,
+        "direction": "maximize",
+        "worst": 0.7,
+        "best": 0.92
+      },
+      "recall": {
+        "weight": 0.44,
+        "direction": "maximize",
+        "worst": 0.7,
+        "best": 0.95
+      },
+      "p95_ms": {
+        "weight": 0.06,
+        "direction": "minimize",
+        "worst": 15,
+        "best": 1
+      },
+      "size_bytes": {
+        "weight": 0.05,
+        "direction": "minimize",
+        "worst": 400000,
+        "best": 3000
+      }
+    }
+  },
+  "winner": "boost",
+  "backup": "tree",
+  "score": 0.7654282241861096,
+  "expected_f1": [
+    0.8478489358560529,
+    0.8785816781646941
+  ],
+  "rejected": [],
+  "risks": [
+    "hardware-dependent latency",
+    "historical population"
+  ],
+  "reselect": "new hardware, schema or recall below floor"
+}

@@ -1,0 +1,8 @@
+{
+  "q": 31,
+  "k": {
+    "full": 14,
+    "pca": 14
+  },
+  "rule": "maximum mean train silhouette; smaller K on ties"
+}

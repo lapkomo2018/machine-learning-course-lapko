@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "sklearn": "1.8.0",
+  "machine": "x86_64",
+  "system": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "batch": 32,
+  "warmup": 5,
+  "repeats": 40,
+  "threads": 1
+}
