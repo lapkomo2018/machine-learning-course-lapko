@@ -1,0 +1,35 @@
+{
+  "branch": "automl",
+  "family": "LogisticRegression",
+  "params": {
+    "C": 3.9999999999999987,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0.0,
+    "max_iter": 100,
+    "n_jobs": 1,
+    "penalty": "l2",
+    "random_state": null,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "threshold": 0.5,
+  "positive_class": 1,
+  "test_metrics_present": false,
+  "mean_ap": {
+    "automl": 0.5628487002730338,
+    "manual": 0.5767801302741419
+  },
+  "delta_automl_minus_manual": -0.013931430001108048,
+  "interval": [
+    -0.06732835085052183,
+    0.04379160764512865
+  ],
+  "reason": "smallest serialized size within epsilon",
+  "epsilon": 0.015,
+  "scope": "red Vinho Verde; human review only"
+}

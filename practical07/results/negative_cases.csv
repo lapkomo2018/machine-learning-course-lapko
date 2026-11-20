@@ -1,0 +1,17 @@
+case,version,outcome
+str,original,predicted
+str,guarded,rejected
+negative,original,predicted
+negative,guarded,rejected
+order,original,rejected
+order,guarded,predicted
+nan,original,predicted
+nan,guarded,rejected
+inf,original,rejected
+inf,guarded,rejected
+extra,original,rejected
+extra,guarded,rejected
+missing,original,rejected
+missing,guarded,rejected
+out_of_range,original,predicted
+out_of_range,guarded,warning

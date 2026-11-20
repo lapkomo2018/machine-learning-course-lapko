@@ -1,0 +1,11 @@
+{
+  "lab06/handoff/model.joblib": "a5b26733814618d857555c2eba1584895304c9c46dac2fc7a71706ad446dc7e0",
+  "lab06/handoff/data_schema.json": "99d713ec236baf8e8f9c0d651af3ae4e09626aa7cc43f5b97f429160aec9183d",
+  "lab06/handoff/selection_decision.json": "7e04acab63bd5915d27e4874832fc51fb49943bb126581b946b7693b9b80e9c2",
+  "lab06/handoff/requirements.txt": "25b86e20fc72f97401dd71e8e1cdaf2e157b276e2e66b431f40af907e7340d96",
+  "lab06/handoff/test_metrics.json": "350dd3782a24eef466c4bfcef9a62a0ffc9cf37edd01ceff022bc6cfbde4ea77",
+  "lab06/README.md": "bbc7b15fbcb33b838262730357e155232ff8372945078f9fe427362caca03706",
+  "lab06/AI_USAGE.md": "865bfa0b9fcc26df2703923ded0e92e0fbf835251f0ae493c2d2fa1857146b27",
+  "lab06/main.py": "4692db109b70d0be520135bb2484fcfddc11fd2cbba23825a5a82a566aed28cb",
+  "data/winequality-red.csv": "4a402cf041b025d4566d954c3b9ba8635a3a8a01e039005d97d6a710278cf05e"
+}

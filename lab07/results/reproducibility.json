@@ -1,0 +1,8 @@
+{
+  "max_abs_probability_difference": 0.0,
+  "n": 272,
+  "tolerance": 1e-10,
+  "ap": 0.3792875957041554,
+  "reference_ap": 0.3792875957041554,
+  "model": "a5b26733814618d857555c2eba1584895304c9c46dac2fc7a71706ad446dc7e0"
+}

@@ -1,0 +1,1 @@
+{"seeds":[11,23,37],"folds":5,"threshold":0.5,"tolerance":1e-10,"primary":"average_precision","source_model_sha256":"a5b26733814618d857555c2eba1584895304c9c46dac2fc7a71706ad446dc7e0"}

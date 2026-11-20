@@ -1,0 +1,14 @@
+{
+  "model_version": "1.0.0",
+  "schema_version": "1.0",
+  "family": "LogisticRegression",
+  "threshold": 0.5,
+  "positive_class": 1,
+  "model_sha256": "a5b26733814618d857555c2eba1584895304c9c46dac2fc7a71706ad446dc7e0",
+  "predictor_sha256": "22c72aa7b9c6aaad51a0c7bb4e178148e89332d2567c90e0e54b701023065c23",
+  "feature_count": 11,
+  "python": "3.12.14",
+  "sklearn": "1.8.0",
+  "joblib": "1.5.3",
+  "intended_use": "educational ranking of red wine samples"
+}

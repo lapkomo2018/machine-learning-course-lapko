@@ -1,0 +1,11 @@
+{
+  "rows": 1599,
+  "features": 11,
+  "missing": 0,
+  "duplicates": 240,
+  "id_overlap": 0,
+  "feature_overlap": 0,
+  "test_positive": 37,
+  "train_positive": 147,
+  "data_sha256": "4a402cf041b025d4566d954c3b9ba8635a3a8a01e039005d97d6a710278cf05e"
+}

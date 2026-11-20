@@ -1,0 +1,6 @@
+id,severity,problem,evidence,mitigation,status
+F1,high,Числовий рядок проходив через sklearn,negative_cases.csv,Сувора схема до inference,fixed
+F2,medium,Зміна порядку полів давала помилку sklearn,negative_cases.csv,Зібрати поля за схемою,fixed
+F3,high,Від’ємний відсоток алкоголю отримував прогноз,negative_cases.csv,Перевірити фізичну область,fixed
+F4,medium,Test AP нижча за вкладену CV,independent_metrics.csv,"Перевірити нову партію, лишити рішення експерту",open
+F5,medium,Немає ID виробника та партії,data_audit.json,Зібрати такі ID для групової валідації,open

@@ -1,0 +1,7 @@
+id,source,criterion,evidence,confirmed
+C1,Протокол ЛР6,ID і вектори не повторюються між частинами,data_audit.json,True
+C2,Таблиця test,"AP, ROC-AUC, F1 відтворюються з допуском 1e-10",independent_metrics.csv,True
+C3,Пошуковий журнал,Кожен пошук має 12 trials і 36 inner fits,../lab06/results/budget.csv,True
+C4,Таблиця OOF,Один прогноз кожної гілки на train ID,../lab06/results/oof.csv,True
+C5,Модельна картка,Сортування краще сталого baseline на test,independent_metrics.csv,True
+C6,Гіпотеза аудиту,Схема зберігає коректні прогнози,independent_metrics.csv,True

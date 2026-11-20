@@ -1,0 +1,11 @@
+{
+  "model": "model.joblib",
+  "schema": "data_schema.json",
+  "metadata": "metadata.json",
+  "decision": "selection_decision.json",
+  "model_version": "1.0.0",
+  "schema_version": "1.0",
+  "threshold": 0.5,
+  "positive_class": 1,
+  "max_batch_size": 64
+}
