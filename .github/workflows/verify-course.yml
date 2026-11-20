@@ -1,0 +1,37 @@
+name: Verify course experiments
+on:
+  push:
+    branches: ['work/verify-course-5-8']
+    paths: ['.github/workflows/verify-course.yml', '.verification/run.sh']
+permissions:
+  contents: write
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      LOKY_MAX_CPU_COUNT: '1'
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run and verify
+        run: |
+          set -eu
+          if test -f .verification/run.sh; then
+            bash .verification/run.sh
+          else
+            python -m pip install -r lab06/requirements.txt
+            python -m lab06.main
+            python -m practical06.main
+            python -m pytest -q lab06 practical06
+            git add lab06/handoff lab06/results lab06/figures practical06/results practical06/figures
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git diff --cached --quiet || git commit -m 'Record verified coursework outputs'
+          git push origin HEAD:refs/heads/work/verify-course-5-8
