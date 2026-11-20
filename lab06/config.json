@@ -1,0 +1,1 @@
+{"seed":71,"stability_seeds":[71,73,79],"test_size":0.2,"outer":5,"inner":3,"budget":12,"epsilon":0.015,"threshold":0.5,"positive_class":1,"test_used_for_search":false,"test_used_for_selection":false,"automl":["lrl2","rf","extra_tree"],"metric":"ap","bootstrap":2000}

@@ -1,0 +1,2 @@
+-r ../lab05/requirements.txt
+FLAML[automl]==2.3.6

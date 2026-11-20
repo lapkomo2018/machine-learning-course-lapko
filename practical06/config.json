@@ -1,0 +1,1 @@
+{"reference":"lab05","seeds":[3,11,19,27,35],"representatives":3,"stability_floor":0.6,"combined_review":0.98,"margin_review":0.1,"priority":["rescan","review","inspect_boundary","no_action"],"queue_capacity_fraction":0.15}

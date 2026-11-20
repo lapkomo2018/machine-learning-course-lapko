@@ -9,3 +9,5 @@ venv/
 *.pkl
 !lab05/artifacts/*.joblib
 !practical05/artifacts/*.joblib
+!lab06/results/*.joblib
+!lab06/handoff/*.joblib
