@@ -1,0 +1,5 @@
+drill,artifact,health,ready,signal,recovered
+missing,model.joblib,200,503,model_unavailable,200
+damaged,model.joblib,200,503,model_unavailable,200
+schema,data_schema.json,200,503,model_unavailable,200
+config,project_config.json,200,503,model_unavailable,200

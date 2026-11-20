@@ -1,0 +1,2 @@
+-r ../lab08/requirements.txt
+-r ../lab05/requirements.txt

@@ -1,0 +1,17 @@
+level,risk,input,expected,evidence
+unit,Зміна полів,Неповний запис,Відмова,lab07/test_predictor.py
+unit,Небезпечний шлях,Вихід із каталогу,Відмова,lab07/test_predictor.py
+contract,Відсутній опис,GET openapi.json,Документ доступний,lab08/test_api.py
+integration,Недоступність,GET health,HTTP 200,lab08/test_api.py
+integration,Модель не готова,Порожній каталог,HTTP 503,lab08/test_api.py
+regression,Зміна прогнозу,8 golden записів,Похибка в допуску,test_operational.py
+metamorphic,Порядок,Зворотний порядок ключів,Той самий прогноз,test_operational.py
+metamorphic,Пакетування,Single і batch,Той самий прогноз,test_operational.py
+metamorphic,Поділ,Дві частини пакета,Збережено результат,test_operational.py
+negative,Неправильна версія,Версія 2,HTTP 422,lab08/test_api.py
+negative,Тип,Текст у числі,HTTP 422,lab08/test_api.py
+negative,Розмір,65 записів,HTTP 422,lab08/test_api.py
+negative,Внутрішня помилка,Контрольована відмова,500 без деталей,test_operational.py
+performance,Затримка,120 single,p95 до 100 мс,results/benchmark.csv
+performance,Пропускна здатність,40 пакетів по 16,p95 до 150 мс,results/benchmark.csv
+integration,Втрата артефакту,Копія моделі видалена,Відновлення 200,results/drills.csv

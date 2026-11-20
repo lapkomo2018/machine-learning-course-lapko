@@ -72,6 +72,17 @@
 - Nested CV дерева, Random Forest, HistGradientBoosting на 20 спільних fold-ах; стійкість за 10 seed-ами і 150 bootstrap.
 - Ансамблі кращі лише на 0,011–0,014 macro F1; обрано дерево глибини 3 (test macro F1 0,800).
 
+### Лабораторні та практичні роботи №5–8
+
+| № | Лабораторна | Практична |
+|---|---|---|
+| 5 | [PCA, кластери та аномалії](lab05/README.md) | [Вибір моделі за обмеженнями](practical05/README.md) |
+| 6 | [Ручний пошук і FLAML](lab06/README.md) | [Інтерпретація кластерів](practical06/README.md) |
+| 7 | [Пакування і frozen rebuild](lab07/README.md) | [Незалежний аудит](practical07/README.md) |
+| 8 | [REST API](lab08/README.md) | [Тести та експлуатаційна перевірка](practical08/README.md) |
+
+Для робіт 5–8 використовуйте файл залежностей і команду запуску з відповідного каталогу. Моделі передаються з ЛР6 через ЛР7 до ЛР8. ПР6 використовує результати ЛР5.
+
 ## Дані
 
 - ПР1–ПР3, ЛР1: погодинний [Bike Sharing Dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) із UCI Machine Learning Repository. Цільова змінна `cnt` — сумарна кількість оренд протягом години.

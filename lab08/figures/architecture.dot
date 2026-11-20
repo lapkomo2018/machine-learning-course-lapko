@@ -1,0 +1,6 @@
+digraph service {
+ graph [rankdir=TB,bgcolor="white"];node [shape=box,style=rounded,fontname="DejaVu Sans"];
+ HTTP -> Middleware -> FastAPI; Middleware -> "Логи і метрики"; FastAPI -> Predictor;
+ "Конфігурація і manifest" -> Predictor; Predictor -> "Перевірка схеми" -> Pipeline;
+ Pipeline -> "Preprocessing" -> "Логістична регресія";
+}

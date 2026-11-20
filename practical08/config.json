@@ -1,0 +1,1 @@
+{"warmup":10,"single":120,"batch":40,"batch_size":16,"burst":48,"concurrency":4,"slo":{"single_p95_ms":100,"batch_p95_ms":150,"success_rate":1.0,"unexpected_500":0},"tolerance":1e-10}

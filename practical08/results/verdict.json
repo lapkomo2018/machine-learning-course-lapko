@@ -1,0 +1,24 @@
+{
+  "actual": {
+    "single_p95_ms": 4.76729590003515,
+    "batch_p95_ms": 5.836125850026971,
+    "success_rate": 1.0,
+    "unexpected_500": 0
+  },
+  "targets": {
+    "single_p95_ms": 100,
+    "batch_p95_ms": 150,
+    "success_rate": 1.0,
+    "unexpected_500": 0
+  },
+  "passed": {
+    "single_p95_ms": true,
+    "batch_p95_ms": true,
+    "success_rate": true,
+    "unexpected_500": true
+  },
+  "ready": true,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "scope": "локальний навчальний прототип"
+}

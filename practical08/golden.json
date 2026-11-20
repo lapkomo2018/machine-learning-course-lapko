@@ -1,0 +1,202 @@
+[
+  {
+    "id": 199,
+    "features": {
+      "fixed acidity": 6.9,
+      "volatile acidity": 1.09,
+      "citric acid": 0.06,
+      "residual sugar": 2.1,
+      "chlorides": 0.061,
+      "free sulfur dioxide": 12.0,
+      "total sulfur dioxide": 31.0,
+      "density": 0.9948,
+      "pH": 3.51,
+      "sulphates": 0.43,
+      "alcohol": 11.4
+    },
+    "expected": {
+      "probability": 0.011749286303965946,
+      "predicted_class": 0,
+      "threshold": 0.5,
+      "positive_class": 1,
+      "model_version": "1.0.0",
+      "schema_version": "1.0",
+      "warnings": []
+    }
+  },
+  {
+    "id": 403,
+    "features": {
+      "fixed acidity": 11.4,
+      "volatile acidity": 0.6,
+      "citric acid": 0.49,
+      "residual sugar": 2.7,
+      "chlorides": 0.085,
+      "free sulfur dioxide": 10.0,
+      "total sulfur dioxide": 41.0,
+      "density": 0.9994,
+      "pH": 3.15,
+      "sulphates": 0.63,
+      "alcohol": 10.5
+    },
+    "expected": {
+      "probability": 0.05336602823614161,
+      "predicted_class": 0,
+      "threshold": 0.5,
+      "positive_class": 1,
+      "model_version": "1.0.0",
+      "schema_version": "1.0",
+      "warnings": []
+    }
+  },
+  {
+    "id": 734,
+    "features": {
+      "fixed acidity": 7.7,
+      "volatile acidity": 0.56,
+      "citric acid": 0.2,
+      "residual sugar": 2.0,
+      "chlorides": 0.075,
+      "free sulfur dioxide": 9.0,
+      "total sulfur dioxide": 39.0,
+      "density": 0.9987,
+      "pH": 3.48,
+      "sulphates": 0.62,
+      "alcohol": 9.3
+    },
+    "expected": {
+      "probability": 0.008887880937540601,
+      "predicted_class": 0,
+      "threshold": 0.5,
+      "positive_class": 1,
+      "model_version": "1.0.0",
+      "schema_version": "1.0",
+      "warnings": []
+    }
+  },
+  {
+    "id": 272,
+    "features": {
+      "fixed acidity": 10.9,
+      "volatile acidity": 0.37,
+      "citric acid": 0.58,
+      "residual sugar": 4.0,
+      "chlorides": 0.071,
+      "free sulfur dioxide": 17.0,
+      "total sulfur dioxide": 65.0,
+      "density": 0.99935,
+      "pH": 3.22,
+      "sulphates": 0.78,
+      "alcohol": 10.1
+    },
+    "expected": {
+      "probability": 0.1728537394323979,
+      "predicted_class": 0,
+      "threshold": 0.5,
+      "positive_class": 1,
+      "model_version": "1.0.0",
+      "schema_version": "1.0",
+      "warnings": []
+    }
+  },
+  {
+    "id": 1335,
+    "features": {
+      "fixed acidity": 6.6,
+      "volatile acidity": 0.58,
+      "citric acid": 0.02,
+      "residual sugar": 2.4,
+      "chlorides": 0.069,
+      "free sulfur dioxide": 19.0,
+      "total sulfur dioxide": 40.0,
+      "density": 0.99387,
+      "pH": 3.38,
+      "sulphates": 0.66,
+      "alcohol": 12.6
+    },
+    "expected": {
+      "probability": 0.27546977026527686,
+      "predicted_class": 0,
+      "threshold": 0.5,
+      "positive_class": 1,
+      "model_version": "1.0.0",
+      "schema_version": "1.0",
+      "warnings": []
+    }
+  },
+  {
+    "id": 640,
+    "features": {
+      "fixed acidity": 9.9,
+      "volatile acidity": 0.54,
+      "citric acid": 0.45,
+      "residual sugar": 2.3,
+      "chlorides": 0.071,
+      "free sulfur dioxide": 16.0,
+      "total sulfur dioxide": 40.0,
+      "density": 0.9991,
+      "pH": 3.39,
+      "sulphates": 0.62,
+      "alcohol": 9.4
+    },
+    "expected": {
+      "probability": 0.022901417781256494,
+      "predicted_class": 0,
+      "threshold": 0.5,
+      "positive_class": 1,
+      "model_version": "1.0.0",
+      "schema_version": "1.0",
+      "warnings": []
+    }
+  },
+  {
+    "id": 392,
+    "features": {
+      "fixed acidity": 9.5,
+      "volatile acidity": 0.37,
+      "citric acid": 0.52,
+      "residual sugar": 2.0,
+      "chlorides": 0.082,
+      "free sulfur dioxide": 6.0,
+      "total sulfur dioxide": 26.0,
+      "density": 0.998,
+      "pH": 3.18,
+      "sulphates": 0.51,
+      "alcohol": 9.5
+    },
+    "expected": {
+      "probability": 0.026959364989066384,
+      "predicted_class": 0,
+      "threshold": 0.5,
+      "positive_class": 1,
+      "model_version": "1.0.0",
+      "schema_version": "1.0",
+      "warnings": []
+    }
+  },
+  {
+    "id": 324,
+    "features": {
+      "fixed acidity": 10.0,
+      "volatile acidity": 0.49,
+      "citric acid": 0.2,
+      "residual sugar": 11.0,
+      "chlorides": 0.071,
+      "free sulfur dioxide": 13.0,
+      "total sulfur dioxide": 50.0,
+      "density": 1.0015,
+      "pH": 3.16,
+      "sulphates": 0.69,
+      "alcohol": 9.2
+    },
+    "expected": {
+      "probability": 0.12233102589234988,
+      "predicted_class": 0,
+      "threshold": 0.5,
+      "positive_class": 1,
+      "model_version": "1.0.0",
+      "schema_version": "1.0",
+      "warnings": []
+    }
+  }
+]
