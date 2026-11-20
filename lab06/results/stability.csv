@@ -1,0 +1,7 @@
+branch,seed,family,best_inner_ap
+manual,71,HistGradientBoostingClassifier,0.5979412634046439
+automl,71,LogisticRegression,0.5485098270063926
+manual,73,RandomForestClassifier,0.5751370845464492
+automl,73,LogisticRegression,0.5391257301344135
+manual,79,HistGradientBoostingClassifier,0.5866342823541228
+automl,79,LogisticRegression,0.5341151393477783

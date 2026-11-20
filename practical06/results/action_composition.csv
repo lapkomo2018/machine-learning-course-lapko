@@ -1,0 +1,5 @@
+action,bright_column,clean,dead_rows,horizontal_shift
+inspect_boundary,0,8,1,0
+no_action,20,310,30,0
+rescan,4,6,1,35
+review,12,36,4,1
