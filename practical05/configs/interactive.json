@@ -1,0 +1,42 @@
+{
+  "name": "interactive",
+  "version": "1.0",
+  "description": "Інтерактивний архів Titanic",
+  "constraints": {
+    "size_bytes": {
+      "max": 60000
+    },
+    "recall": {
+      "min": 0.77
+    },
+    "p95_ms": {
+      "max": 100
+    }
+  },
+  "criteria": {
+    "f1": {
+      "weight": 0.2,
+      "direction": "maximize",
+      "worst": 0.7,
+      "best": 0.92
+    },
+    "recall": {
+      "weight": 0.15,
+      "direction": "maximize",
+      "worst": 0.7,
+      "best": 0.95
+    },
+    "p95_ms": {
+      "weight": 0.35,
+      "direction": "minimize",
+      "worst": 15,
+      "best": 1
+    },
+    "size_bytes": {
+      "weight": 0.3,
+      "direction": "minimize",
+      "worst": 400000,
+      "best": 3000
+    }
+  }
+}
